@@ -4,6 +4,10 @@ An Assignment from RadarSodt.
 
 ![pngwing com](https://user-images.githubusercontent.com/53346938/206276192-a2f78348-750a-4223-924b-d57364ab9ca7.png)
 
+## Download the Pre Compiled Debug APK Here
+
+https://drive.google.com/file/d/1D88babPBX7WNSAjRDlgOCsFwBDN5f56J/view?usp=share_link
+
 ## Getting Started
 
 This project is a starting point for a Flutter application.
