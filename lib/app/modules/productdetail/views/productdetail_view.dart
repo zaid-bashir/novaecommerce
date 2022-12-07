@@ -40,10 +40,14 @@ class _ProductdetailViewState extends State<ProductdetailView>
               child: Column(
                 children: [
                   Row(
-                    children: const [
-                      SvgIcon("assets/ArrowLeft.svg"),
-                      Spacer(),
-                      SvgIcon("assets/BagNav.svg"),
+                    children: [
+                      GestureDetector(
+                          onTap: () {
+                            Get.back();
+                          },
+                          child: const SvgIcon("assets/ArrowLeft.svg")),
+                      const Spacer(),
+                      const SvgIcon("assets/BagNav.svg"),
                     ],
                   ),
                   const SizedBox(
@@ -90,7 +94,7 @@ class _ProductdetailViewState extends State<ProductdetailView>
               height: 10,
             ),
             Container(
-              height: MediaQuery.of(context).size.height * 0.509,
+              // height: MediaQuery.of(context).size.height * 0.509,
               width: double.infinity,
               decoration: const BoxDecoration(
                 color: Colors.white,
@@ -233,6 +237,110 @@ class _ProductdetailViewState extends State<ProductdetailView>
                                     color: kHeading2Color),
                               ),
                             ),
+                          ),
+                        ],
+                      ),
+                    ),
+                    const SizedBox(
+                      height: 20,
+                    ),
+                    Text(
+                      "Color",
+                      style: kHeadName2TestStyle,
+                    ),
+                    const SizedBox(
+                      height: 20,
+                    ),
+                    SizedBox(
+                      height: 45,
+                      width: double.infinity,
+                      child: Row(
+                        children: [
+                          Container(
+                            height: 45,
+                            width: 45,
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(22.5),
+                              color: Colors.black,
+                            ),
+                          ),
+                          const SizedBox(
+                            width: 20,
+                          ),
+                          Container(
+                            height: 45,
+                            width: 45,
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(22.5),
+                              color: const Color(0XFFCACACA),
+                            ),
+                          ),
+                          const SizedBox(
+                            width: 20,
+                          ),
+                          Container(
+                            height: 45,
+                            width: 45,
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(22.5),
+                              color: const Color(0XFFDEDEE0),
+                            ),
+                          ),
+                          const SizedBox(
+                            width: 20,
+                          ),
+                        ],
+                      ),
+                    ),
+                    const SizedBox(
+                      height: 20,
+                    ),
+                    Text(
+                      "Seller",
+                      style: kHeadName2TestStyle,
+                    ),
+                    const SizedBox(
+                      height: 20,
+                    ),
+                    SizedBox(
+                      height: 70,
+                      child: Row(
+                        children: [
+                          Container(
+                            height: 70,
+                            width: 70,
+                            decoration: BoxDecoration(
+                                borderRadius: BorderRadius.circular(10),
+                                image: const DecorationImage(
+                                  image: AssetImage(
+                                    "assets/Avatar.jpg",
+                                  ),
+                                )),
+                          ),
+                          const SizedBox(
+                            width: 15,
+                          ),
+                          Column(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              Text(
+                                "Shiba Store",
+                                style: kHeadName1TestStyle,
+                              ),
+                              const SizedBox(
+                                height: 5,
+                              ),
+                              Text(
+                                "J&K, India",
+                                style: kHeadName2TestStyle,
+                              ),
+                            ],
+                          ),
+                          const Spacer(),
+                          Text(
+                            "View Shop",
+                            style: kHeadName2TestStyle.copyWith(
+                                color: kButtonBackgroundColor),
                           ),
                         ],
                       ),
